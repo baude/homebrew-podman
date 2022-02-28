@@ -97,7 +97,7 @@ class Podman < Formula
 	   --enable-virtfs
            --extra-cflags=-DNCURSES_WIDECHAR=1
            --disable-sdl
-           --target-list aarch64-softmmu,x86_64-softmmu
+           --target-list=aarch64-softmmu,x86_64-softmmu
          ]
          # Sharing Samba directories in QEMU requires the samba.org smbd which is
          # incompatible with the macOS-provided version. This will lead to
