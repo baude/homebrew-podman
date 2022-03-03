@@ -85,7 +85,7 @@ class Podman < Formula
    resource("podman-qemu").stage do
          ENV["LIBTOOL"] = "glibtool"
          args = %W[
-           --prefix=#{prefix}
+           --prefix=#{libexec}
            --cc=#{ENV.cc}
            --host-cc=#{ENV.cc}
            --disable-bsd-user
