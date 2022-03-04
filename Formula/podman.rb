@@ -8,7 +8,7 @@ class Podman < Formula
     sha256 "cac4328b0a5e618f4f6567944e255d15fad3e1f7901df55603f1efdd7aaeda95"
 	patch do
 	    url "https://patch-diff.githubusercontent.com/raw/containers/podman/pull/13409.patch"
-	    sha256 "813d7fa667382cff6c6a82bf9e385f298eb774bcf73f6024e6741a8e42bf9a95"
+	    sha256 "ce2f52ee8eeacf74b0a7f2e3e3362c72b648ef14c52d760ca2b95ef4f8790211"
 	end
 
     resource "gvproxy" do
