@@ -7,10 +7,13 @@ class Podman < Formula
     url "https://github.com/containers/podman/archive/v4.0.2.tar.gz"
     sha256 "cac4328b0a5e618f4f6567944e255d15fad3e1f7901df55603f1efdd7aaeda95"
 	patch do
-	    url "https://patch-diff.githubusercontent.com/raw/containers/podman/pull/13409.patch"
-	    sha256 "ae827cb4f9ee20522367c5978378b3ce751a50a131a698539b071b0f4b6f0137"
-	end
-
+	    url "02313460b545da994381bb51ccf44996ddcb8ecbcb6212e2a4d4f45d39c1d587"
+        sha256 "5cb8c4ee409bc8305a7729a53160a07dc6af5f5e6f6154e360a81d447eb39ffa"
+       end
+       patch do
+           url "https://fedorapeople.org/groups/podman/testing/darwin_qemu_search_paths.patch"
+           sha256 "6315f2c8071b0bdba5c3346c4581aaed70696a7e63c3a361a1e1bd78eb5a3f51"
+       end
     resource "gvproxy" do
       url "https://github.com/containers/gvisor-tap-vsock/archive/v0.3.0.tar.gz"
       sha256 "6ca454ae73fce3574fa2b615e6c923ee526064d0dc2bcf8dab3cca57e9678035"
