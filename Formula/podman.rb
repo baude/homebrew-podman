@@ -8,7 +8,7 @@ class Podman < Formula
     sha256 "cac4328b0a5e618f4f6567944e255d15fad3e1f7901df55603f1efdd7aaeda95"
 	patch do
 	    url "02313460b545da994381bb51ccf44996ddcb8ecbcb6212e2a4d4f45d39c1d587"
-        sha256 "5cb8c4ee409bc8305a7729a53160a07dc6af5f5e6f6154e360a81d447eb39ffa"
+        sha256 "02313460b545da994381bb51ccf44996ddcb8ecbcb6212e2a4d4f45d39c1d587"
        end
        patch do
            url "https://fedorapeople.org/groups/podman/testing/darwin_qemu_search_paths.patch"
