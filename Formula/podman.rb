@@ -80,6 +80,7 @@ class Podman < Formula
     if OS.mac?
       bin.install "bin/#{os}/podman" => "podman-remote"
       bin.install_symlink bin/"podman-remote" => "podman"
+      bin.install "bin/#{os}/podman-mac-helper" => "podman-mac-helper"
     else
       bin.install "bin/podman-remote"
     end
